@@ -22,7 +22,7 @@ li {
   grid-template-areas: 
     "title title ."
     "main main sidebar";
-  padding: 2.5%;
+  padding: 2.5vw;
 }
 #mainTitle {
   font-family: matrix-ii-display-inline-ext, sans-serif;
@@ -75,8 +75,8 @@ grid-area: sidebar;
     "pimage"
     "information";
   width: 20vw;
-  padding: 2.3vh;
-  margin: 5vh;
+  padding: 1vw;
+  margin: 2vw;
   background-color: rgba(255, 255, 255, 1);
   border-radius: 2%
 }
