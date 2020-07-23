@@ -1,0 +1,101 @@
+body {
+  background-color: rgba(193, 232, 203, 70);
+    font-family:  sans-serif;
+}
+h1, h2, h3, h4{
+  text-align: center;
+}
+h2 { padding-top: 2vh}
+p {
+  padding: 2%;
+  line-height: 2;
+}
+a {
+  color: darkgreen;
+}
+li {
+  line-height: 2;
+}
+
+#mainContainer{
+  display: grid;
+  grid-template-areas: 
+    "title title ."
+    "main main sidebar";
+  padding: 2.5%;
+}
+#mainTitle {
+  font-family: matrix-ii-display-inline-ext, sans-serif;
+font-weight: 800;
+font-style: normal;
+  font-size: 3em;
+  color:black;
+    
+}
+#mainSubtitle {
+  font-family: matrix-ii-script, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color:black;
+}
+header {
+  grid-area: title;
+  padding 5%;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+  background-color: rgba(255, 240, 249, .9);
+  border-radius: 20%;
+ box-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+aside { 
+grid-area: sidebar;
+  text-shadow: 4px 4px 2px rgba(150, 150, 150, 1);
+}
+#productsContainer {
+  grid-area: main;
+  width: 80vw;
+  font-weight: 400;
+  font-style: normal;
+}
+.asideTitles {
+  color: white;
+   font-family: matrix-ii-script, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+}
+.products{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.productCard {
+  display: grid;
+  grid-template-areas: 
+    "title"
+    "pimage"
+    "information";
+  width: 20vw;
+  padding: 2.3vh;
+  margin: 5vh;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 2%
+}
+.productImage {
+  grid-area: pimage;
+  width: 15vw;
+  margin-left: 12%;
+  
+}
+#productMainTitle {
+  grid-area: title;
+}
+#productMainSubtitle {
+  grid-area: title;
+}
+.productTitle {
+  grid-area: title; 
+  font-family: matrix-ii-script, sans-serif;/* oSmallChange@gmail.com  --- send business card or name contact email and logo. want full sized products, shop here. */
+}
+.information {
+  grid-area: information;
+}
